@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=flask,python,visualstudiocode
 
 ## USER ##
-secret.py
+env_vars.py
 
 ### Flask ###
 instance/*
