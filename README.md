@@ -12,6 +12,8 @@ Application where you can post to a timeline in a manner that is definitely not 
 
 In no particular order
 
+- UI work (consistent design etc)
+
 - User profile page
 
 - A detail view to show a single shout. Click a shout to go to its 'page' (comments to come etc)
