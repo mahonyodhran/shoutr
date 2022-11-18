@@ -1,7 +1,7 @@
 import os
 
 from flask import Flask
-from secret import SECRET_KEY
+from .env_vars import SECRET_KEY
 
 
 def create_app(test_config=None):
