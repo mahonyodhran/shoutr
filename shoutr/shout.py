@@ -77,7 +77,7 @@ def update(id):
             db.execute(
                 'UPDATE shout SET shout = ?'
                 ' WHERE id = ?',
-                (shout, id)
+                (shout_request, id)
             )
             db.commit()
             return redirect(url_for('shout.index'))
