@@ -27,4 +27,8 @@ def create_app(test_config=None):
     from . import auth
     app.register_blueprint(auth.bp)
     
+    from . import shout
+    app.register_blueprint(shout.bp)
+    app.add_url_rule('/', endpoint='index')
+    
     return app
