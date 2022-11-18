@@ -3,18 +3,18 @@
 {% block header %}
   <h1>{% block title %}Timeline{% endblock %}</h1>
   {% if g.user %}
-    <a class="action" href="{{ url_for('shout.create') }}">New</a>
+    <a href="{{ url_for('shout.create') }}">New</a>
   {% endif %}
 {% endblock %}
 
 {% block content %}
   {% for shout in shouts %}
-    <article class="shout">
+    <article>
         {% if g.user['id'] == shout['author_id'] %}
-          <a class="action" href="{{ url_for('shout.update', id=shout['id']) }}">Edit</a>
+          <a href="{{ url_for('shout.update', id=shout['id']) }}">Edit</a>
         {% endif %}
-      <p class="body">{{ shout['shout'] }}</p>
-      <div class="about">@{{ shout['username'] }} on {{ shout['created'].strftime('%d-%m-%Y @ %H:%M') }}</div>
+      <p>{{ shout['shout'] }}</p>
+      <div>@{{ shout['username'] }} on {{ shout['created'].strftime('%d-%m-%Y @ %H:%M') }}</div>
     </article>
     {% if not loop.last %}
       <hr>
