@@ -3,10 +3,12 @@ from flask import (
 )
 from werkzeug.exceptions import abort
 from shoutr.db import get_db
+from shoutr.auth import login_required
 
 bp = Blueprint('profile', __name__, url_prefix='/profile')
 
 @bp.route('/<int:id>/', methods=('GET', 'POST'))
+@login_required
 def get_user_by_id(id):
     user = get_db().execute(
         'SELECT id, username'
@@ -21,6 +23,7 @@ def get_user_by_id(id):
     return render_template('profile/view-profile.html', user=user)
 
 @bp.route('/<username>/', methods=('GET', 'POST'))
+@login_required
 def get_user_by_username(username):
     user = get_db().execute(
         'SELECT id, username'

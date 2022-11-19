@@ -9,6 +9,7 @@ from shoutr.db import get_db
 bp = Blueprint('shout', __name__)
 
 @bp.route('/')
+@login_required
 def index():
     db = get_db()
     shouts = db.execute(
