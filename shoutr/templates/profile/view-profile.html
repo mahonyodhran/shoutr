@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Profile{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<hr>
+<a href="{{ url_for('index') }}">Back</a>
+<br>
+Username: @{{user.username}}
+{% endblock %}
