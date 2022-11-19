@@ -3,7 +3,8 @@
 {% block header %}
   <h1>{% block title %}Timeline{% endblock %}</h1>
   {% if g.user %}
-    <a href="{{ url_for('shout.create') }}">New</a>
+    <a href="{{ url_for('shout.create') }}">Shout</a>
+    <hr>
   {% endif %}
 {% endblock %}
 
