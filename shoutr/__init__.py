@@ -2,6 +2,10 @@ import os
 
 from flask import Flask
 from .env_vars import SECRET_KEY
+from . import profile
+from . import shout
+from . import auth
+from . import db
 
 
 def create_app(test_config=None):
@@ -21,17 +25,12 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    from . import db
     db.init_app(app)
     
-    from . import auth
     app.register_blueprint(auth.bp)
-    
-    from . import shout
+    app.register_blueprint(profile.bp)
     app.register_blueprint(shout.bp)
     app.add_url_rule('/', endpoint='index')
-    
-    from . import profile
-    app.register_blueprint(profile.bp)
-    
+
+
     return app
