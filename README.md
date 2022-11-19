@@ -14,6 +14,9 @@ In no particular order
 * UI Work
   * Register page ✔️ 19/11
   * Login page ✔️ 19/11
+  * File to extend Register/Login from
+  * Nav bar (side? Top?)
+  * Shout on timeline
 
 - User profile page (just details etc - no shouts linked to them) ✔️ 19/11
 
