@@ -14,13 +14,22 @@ def register():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        repassword = request.form['repassword']
         db = get_db()
         error = None
 
         if not username:
             error = 'Username is required.'
+        elif len(username) < 5:
+            error = 'Username must be min 5 characters.'
         elif not password:
             error = 'Password is required.'
+        elif len(password) < 8:
+            error = 'Password must be min 8 characters'
+        elif not repassword:
+            error = 'Please enter your password again.'
+        elif password != repassword:
+            error = 'Passwords do not match.'
 
         if error is None:
             try:
