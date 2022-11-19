@@ -14,7 +14,17 @@ In no particular order
 
 - UI work (consistent design etc)
 
-- User profile page
+- ~~User profile page (just details etc - no shouts linked to them)~~ 19/11
+
+- User profile page shows shouts from user
+
+- Tab for liked shouts
+
+- Route similar to getting the profile by id but done by username
+
+- Clicking @username brings you to users page
+
+- Customise 404 page [example](https://flask.palletsprojects.com/en/2.2.x/errorhandling/#custom-error-pages)
 
 - A detail view to show a single shout. Click a shout to go to its 'page' (comments to come etc)
 
@@ -25,3 +35,8 @@ In no particular order
 - Labels/Hashtag etc. Clicking a label shows all the posts with that label
 
 - Pagination (Show most recent X amount of shouts with a load more button?)
+### Usage
+> More to come
+```
+flask --app shoutr --debug run
+```

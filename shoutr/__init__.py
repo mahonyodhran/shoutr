@@ -31,4 +31,7 @@ def create_app(test_config=None):
     app.register_blueprint(shout.bp)
     app.add_url_rule('/', endpoint='index')
     
+    from . import profile
+    app.register_blueprint(profile.bp)
+    
     return app
