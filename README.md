@@ -11,10 +11,14 @@ Application where you can post to a timeline in a manner that is definitely not 
 ## Roadmap
 
 In no particular order
+* UI Work
+  * Register page ✔️ 19/11
+  * Login page ✔️ 19/11
+  * File to extend Register/Login from
+  * Nav bar (side? Top?)
+  * Shout on timeline
 
-- UI work (consistent design etc)
-
-- ~~User profile page (just details etc - no shouts linked to them)~~ 19/11
+- User profile page (just details etc - no shouts linked to them) ✔️ 19/11
 
 - User profile page shows shouts from user
 
