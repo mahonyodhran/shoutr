@@ -14,7 +14,7 @@ In no particular order
 
 - UI work (consistent design etc)
 
-- User profile page (just details etc - no shouts linked to them)
+- ~~User profile page (just details etc - no shouts linked to them)~~ 19/11
 
 - User profile page shows shouts from user
 
