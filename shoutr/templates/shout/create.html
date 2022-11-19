@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block content %}
+<a href="{{ url_for('index') }}">Back</a>
   <form method="post">
-    <label for="shout">Shout</label>
     <textarea name="shout" id="shout">{{ request.form['shout'] }}</textarea>
     <input type="submit" value="Save">
   </form>
