@@ -22,6 +22,12 @@ In no particular order
 
 - User profile page shows shouts from user
 
+- Follow a user
+
+- View followers
+
+- Like a shout
+
 - Tab for liked shouts
 
 - Route similar to getting the profile by id but done by username
