@@ -26,6 +26,8 @@ In no particular order
 
 - View followers
 
+- View if followers are following you back
+
 - Like a shout
 
 - Tab for liked shouts
