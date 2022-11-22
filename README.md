@@ -48,7 +48,9 @@ In no particular order
 
 - Pagination (Show most recent X amount of shouts with a load more button?)
 ### Usage
-> More to come
+> Within the shoutr directory - create a file called env_vars and create a variable called SECRET_KEY and assign a value to it. This covers the import within \__init__.py
+>
+>Once that is assigned, make use of the bash file by running the below command from the root directory
 ```
-flask --app shoutr --debug run
+bash runApp.sh
 ```
